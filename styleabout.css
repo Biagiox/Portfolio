@@ -1,0 +1,110 @@
+@keyframes cambiocolore {
+    0%   {color: red;}
+    25%  {color: rgb(251, 251, 23);}
+    50%  {color: rgb(3, 206, 251);}
+    100% {color: rgb(0, 255, 0);}
+}
+
+
+.titolo{
+    background-color: #000000; 
+    padding: 20px; 
+    font-size: 40px; 
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+.titolo img{
+    float: left; 
+    max-width: 11%;
+    border-radius: 70%;
+    margin-left: 0;
+    display: flex;
+    align-self: center;
+    margin-right: 10px;
+}
+.curriculum {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.curriculum img{
+    max-width: 50%;
+}
+body{
+    background-color: goldenrod !important;
+}
+.index{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+}
+.index a{
+    color: white;
+    font-size: 30px;
+
+}
+.skills{
+    background-color: #000000;
+    color: #ffffff;
+    width: 50%; 
+    margin: 0 auto; 
+}
+.skills h2{
+    text-align: center;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#bb1717;
+}
+.skills .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .text, .skills .images {
+    flex: 1;
+    padding: 20px;
+}
+
+.skills .images {
+    border-left: 1px solid lightgray; 
+}
+.skills .text p {
+    text-align: center; 
+    font-size: 24px;
+    animation-name: cambiocolore;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.skills .images img{
+    max-width: 50%;
+    background-color: whitesmoke;
+}
+@media (max-width: 768px) {
+    .titolo, .curriculum, .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .col-md-4 {
+        width: 100%; 
+        padding: 10px; 
+    }
+     .curriculum img{
+        max-width: 85%; 
+        height: auto; 
+    }
+    .skills{
+        width: 85%;
+    }
+}
+
+
