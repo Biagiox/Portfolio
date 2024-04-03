@@ -88,23 +88,36 @@ body{
     background-color: whitesmoke;
 }
 @media (max-width: 768px) {
-    .titolo, .curriculum, .skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .col-md-4 {
-        width: 100%; 
-        padding: 10px; 
-    }
-     .curriculum img{
+    .curriculum img{
         max-width: 85%; 
         height: auto; 
     }
     .skills{
         width: 85%;
     }
-}
+    .skills .images img{
+        max-width: 85%;
+    }
+    .skills .text p{
+        font-size: 15px;
+    }
+    .titolo .index a{
+        font-size: 20px;
+        justify-content: left;
+        align-self: left;
+        display: flex;
+    }
+    .titolo{
+        display:flex;
+        justify-content: right;
+    }
+    .titolo img{
+        max-width: 25%;
+    }
+
+    }
+    
+    
+
 
 
